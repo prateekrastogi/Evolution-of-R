@@ -86,7 +86,7 @@ fdplst<-c(tx,setdiff(fdplst,tx)) #as import field in namespace got more priority
     tmpname<-pkgname[i]  # to get the name of the package we are processing
     #print(tmpname)
     #print(tmppkgpath)
-    #print("fuck u")
+
     fldpath1<-file.path(ext,dir(ext,recursive=F))     
       temp<-fldpath1[grep(tmpname,fldpath1)]       # separating only the packages that we are currently processing.It doesn't seem working.
       temp1<-readLines(".//data//opkgtemppath.txt")
@@ -108,7 +108,7 @@ fdplst<-c(tx,setdiff(fdplst,tx)) #as import field in namespace got more priority
       funlst<-as.vector(funextractlst[[1]])   #getting list of functions present inside the dependent package
       funlst<-c(pkgname[i],funlst)
       rfpath<-funextractlst[[2]]    #path of the r source file in the dependent package
-      if(length(rfpath)>0)        #this code has literally raped my mind
+      if(length(rfpath)>0)     
       {
         for(i in 1:length(rfpath))
         {  
@@ -127,7 +127,7 @@ fdplst<-c(tx,setdiff(fdplst,tx)) #as import field in namespace got more priority
     tmpname<-pkgname[i]  # to get the name of the package we are processing
     
     #print(tmppkgpath)
-    #print("fuck u")
+
     fldpath1<-file.path(ext,dir(ext,recursive=F))     
     temp<-fldpath1[grep(tmpname,fldpath1)]       # separating only the packages that we are currently processing.It doesn't seem working.
     temp1<-readLines(".//data//opkgtemppath.txt")
@@ -150,7 +150,7 @@ fdplst<-c(tx,setdiff(fdplst,tx)) #as import field in namespace got more priority
       funlst<-as.vector(funextractlst[[1]])   #getting list of functions present inside the dependent package
       
       rfpath<-funextractlst[[2]]   #path of the r source file in the dependent package
-      if(length(rfpath)>0)        #this code has literally raped my mind
+      if(length(rfpath)>0)        
       {
         for(i in 1:length(rfpath))
         {  
@@ -180,10 +180,10 @@ fdplst<-c(tx,setdiff(fdplst,tx)) #as import field in namespace got more priority
   if(length(tfun)!=0)
  {finalfunlst<-c(tlist,finalfunlst)}   #final function list
   #print("here")
- # print("fuck")
+
   fw<-NULL
   try({fw<-foodweb(where="custom",plotting=F)})
- # print("yaha")
+
   if(length(fw)>0)
  { for(fun in originalfunlst)
   {
