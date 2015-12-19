@@ -64,7 +64,7 @@ nmerge<-function(name,aid)
            }
          }
       #  print(sim)
-        # print("bhad mein jaa")
+  
         fsim<-max(sim)
         # print(index)
         # print(i)
@@ -75,16 +75,16 @@ nmerge<-function(name,aid)
            {
              if(i!=index)
              {
-              # print("fuck")
+          
               # print(fsim)
              # print(aid[i])
              #  print(aid[index])
-             # print("maa chuda")
+           
               #print(name[i])
               #print(mhelper[index])
               # print(i)
               # print(index)
-              # print("chal ja bc")
+             
                dbwrite(aid[index],aid[i])
              }
            }   
@@ -162,7 +162,7 @@ emerge<-function(name,aid)
               }
             }
             #  print(sim)
-            # print("bhad mein jaa")
+        
             fsim<-max(sim)
             # print(index)
             # print(i)
@@ -173,16 +173,16 @@ emerge<-function(name,aid)
               {
                 if(i!=index)
                 {
-                  #print("fuck")
+          
                   #print(fsim)
                   #print(aid[i])
                   #print(aid[index])
-                  #print("maa chuda")
+                 
                   #print(name[i])
                   #print(mhelper[index])
                   # print(i)
                   # print(index)
-                  # print("mother fucker")
+                 
                   dbwrite(aid[index],aid[i])
                 }
               }   
