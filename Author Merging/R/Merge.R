@@ -73,9 +73,9 @@ nematch<-function(pid,author,email)
     }
     #print(author)
   }
-# print("maadar chod")
+
  # print(author)
-# print("bkl") 
+ 
   tauthor<-author
   #print(tauthor)
   #print(email)
@@ -102,7 +102,6 @@ nematch<-function(pid,author,email)
     {
       #print(email)
       email<-setdiff(email,(templst2[[1]]))
-     # print("fuck off")
      # print(email)
     }
     # print(author)
@@ -117,7 +116,7 @@ nematch<-function(pid,author,email)
     #print(author)
    # print("loop")
 }
-  #print("behen chod")
+
  # print(email)
 #print(author)
   # assign all the remaining authors and mail as separate identity
@@ -140,7 +139,7 @@ nematch<-function(pid,author,email)
       dauth<-c("NULL")
       role<-c("author")
       dmail<-t
-     # print("yaha maa chuda raha hu")
+  
      # print(pid)
       dbwrite(pid,dauth,dmail,role)
     }
@@ -175,7 +174,7 @@ nmperfect<-function(email,posid,aut,author,pid)
 # print(email)
   for(t in email)
   {
-    #print("fuck here")
+ 
    # print(t)
   normail<-c(normail,unlist(strsplit(t,"@"))[1])
   }
